@@ -1,3 +1,13 @@
+/* Hero 标题渐变效果 */
+.VPHomeHero .name,
+.VPHomeHero .name span,
+.home .hero .name {
+  background: linear-gradient(120deg, #41d1ff 30%, #bd34fe 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
 /* Global styles for VitePress pages */
 .common_img {
   display: block;
@@ -108,4 +118,9 @@
 
 .vp-doc table .common_img {
   margin: 0 auto;
+}
+
+/* 调整首页内置分隔线（Feature 下方那条）宽度，让它更接近内容区整体宽度 */
+.VPHome .main::before {
+  width: 100%;
 }

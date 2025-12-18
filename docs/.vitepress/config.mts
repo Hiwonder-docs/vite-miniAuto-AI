@@ -7,6 +7,8 @@ export default defineConfig({
   description: "A VitePress Site",
 
   themeConfig: {
+    siteTitle: '幻尔科技',
+    logo: '/WonderCom.png',
     // Show both H2 and H3 in the right-side outline
     outline: [2, 3],
     search: {
@@ -40,7 +42,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
+      // { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
       { icon: 'shopify', link: 'https://www.hiwonder.com' }
     ]
   }
