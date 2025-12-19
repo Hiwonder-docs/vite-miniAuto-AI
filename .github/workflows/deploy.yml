@@ -40,17 +40,25 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v6
         with:
-          node-version: 24
-          cache: npm # 或 pnpm / yarn
+          node-version: 20
+          cache: npm
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
       - name: Install dependencies
-        run: npm ci # 或 pnpm install / yarn install / bun install
+        run: npm install
 
       - name: Build with VitePress
-        run: npm run docs:build # 或 pnpm docs:build / yarn docs:build / bun run docs:build
+        run: npm run docs:build
+        continue-on-error: false
+
+      - name: Check build output
+        run: |
+          echo "Build output directory contents:"
+          ls -la docs/.vitepress/dist/ || echo "Build directory not found!"
+          echo "Checking for index.html:"
+          ls -la docs/.vitepress/dist/index.html || echo "index.html not found!"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
