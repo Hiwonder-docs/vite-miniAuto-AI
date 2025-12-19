@@ -124,19 +124,3 @@
 .VPHome .main::before {
   width: 100%;
 }
-
-/* 隐藏导航栏外部链接的箭头图标 */
-:root {
-  --vp-external-link-icon-display: none;
-}
-
-.VPNavBarMenuLink::after,
-.VPNavBarMenuLink .icon,
-.VPNavBarMenuLink .external-link-icon,
-nav a[href^="http"]::after,
-nav a[href^="https"]::after,
-.VPNavBarMenu a[href^="http"]::after,
-.VPNavBarMenu a[href^="https"]::after {
-  display: none !important;
-  content: none !important;
-}
