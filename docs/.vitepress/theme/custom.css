@@ -124,3 +124,14 @@
 .VPHome .main::before {
   width: 100%;
 }
+
+/* 隐藏导航栏中设置了 target="_self" 的外部链接箭头图标 */
+.VPNavBarMenuLink[target="_self"]::after,
+.VPNavBarMenu a[target="_self"]::after,
+.VPNavBarMenuLink[target="_self"] .icon,
+.VPNavBarMenuLink[target="_self"] .external-link-icon,
+.VPNavBarMenu a[target="_self"] .icon {
+  display: none !important;
+  content: none !important;
+  visibility: hidden !important;
+}
