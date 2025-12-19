@@ -16,7 +16,8 @@ export default defineConfig({
     },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: 'https://hiwonder-docs.github.io/vite-Hiwonder-docs/' }
+      { text: 'Home', link: 'https://hiwonder-docs.github.io/vite-Hiwonder-docs/' },
+      { text: 'shopify', link: 'https://www.hiwonder.com' }
     ],
 
     sidebar: [
