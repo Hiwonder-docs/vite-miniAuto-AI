@@ -8,7 +8,7 @@ export default defineConfig({
 
   themeConfig: {
     siteTitle: '幻尔科技',
-    logo: '/WonderCom.png',
+    // logo: '/WonderCom.png',
     // Show both H2 and H3 in the right-side outline
     outline: [2, 3],
     search: {
@@ -16,8 +16,7 @@ export default defineConfig({
     },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/page/1.学前先看' }
+      { text: 'Home', link: 'https://hiwonder-docs.github.io/vite-Hiwonder-docs/' }
     ],
 
     sidebar: [
